@@ -9,7 +9,8 @@ from datetime import datetime
 #otro cambio
 #pattern = r"\b([TMSFP]|[a-zA-Z]{1,4})(?:\s?\-?\s?|-)?([0-9]{1,4})(?:[a-zA-Z]?)\b"
 #pattern = r"\b([TMSFPH]|[a-zA-Z]{1,4}(?:\s?\-?\s?|-)?\d{1,4}(?:\s?\-?\s?|-)?(?:[a-zA-Z])?)\b"
-pattern = r"\b([TMSFPH]|[A-Za-z]{1,4}(?: [-]? |[- ])?\d{1,4}(?: [-]? |[- ])?[A-Za-z0-9]{1,2}|[A-Za-z]{1,4}[ ]*?-[ ]*?[A-Za-z0-9]{1,4}|)\b"
+#pattern = r"\b([TMSFPH]|[A-Za-z]{1,4}(?: [-]? |[- ])?\d{1,4}(?: [-]? |[- ])?[A-Za-z0-9]{1,2}|[A-Za-z]{1,4}[ ]*?-[ ]*?[A-Za-z0-9]{1,4}|)\b"
+pattern = r"\b([TMSFPH]|[A-Za-z]{1,4}(?:[ -.]?|[-. ])?\d{1,4}(?:[ -.]?|[-. ])?[A-Za-z0-9]{1,2}|[A-Za-z]{1,4}[ ]*?[-.][ ]*?[A-Za-z0-9]{1,4}|)\b"
 
 file_path = ""
 type_of_units = []
